@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes"
+    app:startDestination="@id/fragment_Search">
+
+    <fragment
+        android:id="@+id/fragment_Search"
+        android:name="com.example.zachet.Fragment_Search"
+        android:label="fragment__search"
+        tools:layout="@layout/fragment__search" >
+        <action
+            android:id="@+id/action_fragment_Search_to_myWeather"
+            app:destination="@id/myWeather" />
+    </fragment>
+    <fragment
+        android:id="@+id/myWeather"
+        android:name="com.example.zachet.MyWeather"
+        android:label="fragment_my_weather"
+        tools:layout="@layout/fragment_my_weather" />
+</navigation>
